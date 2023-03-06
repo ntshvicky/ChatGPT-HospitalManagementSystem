@@ -1,0 +1,39 @@
+
+<!-- Patient Testing Log Page -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patient Testing Log Page</title>
+</head>
+<body>
+	<h1>Patient Testing Log Page</h1>
+	<form>
+		<label for="patient-id">Patient ID:</label>
+		<input type="text" id="patient-id" name="patient-id" required><br><br>
+		<label for="test-type">Test Type:</label>
+		<input type="text" id="test-type" name="test-type" required><br><br>
+		<label for="test-result">Test Result:</label>
+		<textarea id="test-result" name="test-result"></textarea><br><br>
+		<input type="submit" value="Log Test">
+	</form>
+	<table>
+		<thead>
+			<tr>
+				<th>Patient ID</th>
+				<th>Test Type</th>
+				<th>Test Result</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Blood Test</td>
+				<td>Positive</td>
+				<td><button>View</button></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>X-Ray</td>
+				<td>Normal</td>
+				<td><button>View

@@ -1,0 +1,55 @@
+<!-- Admission Management Page -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admission Management Page</title>
+</head>
+<body>
+	<h1>Admission Management Page</h1>
+	<form>
+		<label for="patient-name">Patient Name:</label>
+		<input type="text" id="patient-name" name="patient-name" required><br><br>
+		<label for="patient-age">Patient Age:</label>
+		<input type="number" id="patient-age" name="patient-age" required><br><br>
+		<label for="patient-gender">Patient Gender:</label>
+		<select id="patient-gender" name="patient-gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select><br><br>
+		<label for="patient-condition">Patient Condition:</label>
+		<textarea id="patient-condition" name="patient-condition"></textarea><br><br>
+		<input type="submit" value="Register Patient">
+	</form>
+	<table>
+		<thead>
+			<tr>
+				<th>Patient ID</th>
+				<th>Patient Name</th>
+				<th>Patient Age</th>
+				<th>Patient Gender</th>
+				<th>Patient Condition</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John Doe</td>
+				<td>35</td>
+				<td>Male</td>
+				<td>Fever</td>
+				<td><button>View</button></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jane Smith</td>
+				<td>28</td>
+				<td>Female</td>
+				<td>Broken Arm</td>
+				<td><button>View</button></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

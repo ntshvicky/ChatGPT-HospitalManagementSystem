@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Hospital Management System</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<<li class="nav-item active">
+					<a class="nav-link" href="#">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Patient Management</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Admission Management</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Patient Testing Log</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Operation Theater Booking</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Hospital Staff Management</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">User Management</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Doctor Management</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Staff Attendance Report</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Patient Data and Reports</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Hospital Dashboard</h1>
+                <p>Number of patients: 100</p>
+                <p>Revenue: $1,000,000</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Doctor</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. John Smith</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Jane Doe</td>
+                            <td>Busy</td>
+                        </tr>
+                    </tbody>
+                </table>
+			</div>
+			<div class="col-md-6">
+				<h2>Analytics</h2>
+				<canvas id="patientStatusChart" width="400" height="400"></canvas>
+				<script>
+					var ctx = document.getElementById("patientStatusChart").getContext('2d');
+					var patientStatusChart = new Chart(ctx, {
+						type: 'pie',
+						data: {
+							labels: ["Admitted", "Discharged", "In Surgery"],
+							datasets: [{
+								backgroundColor: [
+									"#2ecc71",
+									"#3498db",
+									"#e74c3c"
+								],
+								data: [40, 30, 30]
+							}]
+						}
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
